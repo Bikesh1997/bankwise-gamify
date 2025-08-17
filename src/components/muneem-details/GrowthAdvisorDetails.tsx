@@ -103,7 +103,6 @@ const GrowthAdvisorDetails: React.FC = () => {
                   </div>
                   <p className="text-foreground">
                     "Let me help you with some competition analysis of the garment business in global and domestic markets. 
-                    This will help you understand your position and find new growth opportunities! 📈"
                   </p>
                 </div>
               </div>
