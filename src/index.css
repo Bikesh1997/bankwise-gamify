@@ -8,89 +8,131 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Aditya Birla Finance Brand Colors - Enhanced */
+    --background: 0 0% 98%;
+    --foreground: 210 11% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 11% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 11% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Aditya Birla Red Primary - Corporate Brand */
+    --primary: 352 85% 46%;  /* #C91429 - Aditya Birla Red */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 352 85% 85%;
+    --primary-dark: 352 85% 35%;
+    --primary-glow: 352 85% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Professional Gold Secondary - Corporate Accent */
+    --secondary: 43 74% 49%;  /* #D4AF37 - Gold */
+    --secondary-foreground: 210 11% 15%;
+    --secondary-light: 43 74% 85%;
+    --secondary-dark: 43 74% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Neutral Grays - Enhanced */
+    --muted: 210 40% 96%;
+    --muted-foreground: 210 6% 46%;
+    --muted-dark: 210 40% 88%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 43 74% 95%;
+    --accent-foreground: 210 11% 15%;
+    --accent-hover: 43 74% 92%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status Colors - Enhanced */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 142 76% 90%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 24 45% 20%;
+    --warning-light: 43 96% 90%;
+    --destructive: 352 85% 46%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-light: 352 85% 90%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Surfaces */
+    --border: 210 20% 89%;
+    --input: 210 20% 89%;
+    --ring: 352 85% 46%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
+    /* Enhanced gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+    --gradient-primary-hover: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--primary)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-dark)));
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--muted)), hsl(var(--background)));
+    
+    /* Enhanced shadows */
+    --shadow-elegant: 0 10px 25px -5px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.2);
+    --shadow-hover: 0 20px 25px -5px hsl(var(--primary) / 0.1), 0 10px 10px -5px hsl(var(--primary) / 0.04);
+    
+    /* Enhanced typography scale */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    
+    --line-height-tight: 1.25;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+    
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-normal: 0em;
+    --letter-spacing-wide: 0.025em;
+    
+    /* Sidebar colors */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 11% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 11% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 11% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 352 85% 46%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 352 85% 85%;
+    --primary-dark: 352 85% 35%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 43 74% 49%;
+    --secondary-foreground: 210 11% 15%;
+    --secondary-light: 43 74% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 11% 15%;
+    --muted-foreground: 210 6% 66%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 43 74% 15%;
+    --accent-foreground: 43 74% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 24 45% 20%;
+    --destructive: 352 85% 46%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 210 11% 15%;
+    --input: 210 11% 15%;
+    --ring: 352 85% 46%;
   }
 }
 
@@ -100,6 +142,227 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    letter-spacing: var(--letter-spacing-normal);
+    line-height: var(--line-height-normal);
+  }
+
+  /* Corporate Typography Classes */
+  .text-hero {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  
+  .text-display {
+    font-size: 3rem;
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    font-weight: 700;
+  }
+  
+  .text-heading {
+    font-size: 2.25rem;
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    font-weight: 600;
+  }
+  
+  .text-section-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  
+  .text-subheading {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-normal);
+    letter-spacing: var(--letter-spacing-normal);
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .text-hero { font-size: 3rem; }
+    .text-display { font-size: 2rem; }
+    .text-section-title { font-size: 1.875rem; }
+  }
+
+  /* Enhanced button animations */
+  .btn-primary {
+    @apply bg-gradient-to-br from-primary to-primary-dark text-primary-foreground;
+    @apply hover:from-primary-glow hover:to-primary transform hover:-translate-y-0.5 hover:scale-105;
+    @apply transition-all duration-300 shadow-md hover:shadow-glow;
+    @apply focus:ring-2 focus:ring-primary/20 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-gradient-to-br from-secondary to-secondary-dark text-secondary-foreground;
+    @apply border border-secondary/20 transform hover:-translate-y-0.5 hover:scale-105;
+    @apply transition-all duration-300 shadow-sm hover:shadow-md;
+    @apply focus:ring-2 focus:ring-secondary/20 focus:ring-offset-2;
+  }
+  
+  .btn-ghost-enhanced {
+    @apply hover:bg-accent-hover hover:text-accent-foreground;
+    @apply transform hover:scale-105 transition-all duration-200;
+    @apply focus:ring-2 focus:ring-primary/20 focus:ring-offset-1;
+  }
+
+  /* Enhanced card animations */
+  .card-elevated {
+    @apply bg-card border border-border/20 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl;
+  }
+  
+  .card-interactive {
+    @apply cursor-pointer hover:shadow-lg transform hover:-translate-y-1 hover:scale-[1.02];
+    @apply transition-all duration-300 ease-out;
+    @apply hover:border-primary/20;
+  }
+
+  /* Interactive elements */
+  .interactive-scale {
+    @apply transform hover:scale-105 active:scale-95 transition-transform duration-200;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20;
+  }
+  
+  .glow-on-hover:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Progress bar enhancements */
+  .progress-enhanced {
+    @apply relative overflow-hidden rounded-full bg-muted;
+  }
+  
+  .progress-enhanced::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    @apply translate-x-[-100%] animate-[shimmer_2s_infinite];
+  }
+  
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+
+  /* Form enhancements */
+  .input-enhanced {
+    @apply border border-input bg-background/50 backdrop-blur-sm;
+    @apply focus:border-primary focus:ring-2 focus:ring-primary/20;
+    @apply transition-all duration-300;
+  }
+  
+  .input-enhanced:focus {
+    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+  }
+
+  /* Notification animations */
+  .notification-slide-in {
+    animation: slideInRight 0.3s ease-out;
+  }
+  
+  @keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  /* Loading animations */
+  .pulse-enhanced {
+    animation: pulseEnhanced 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulseEnhanced {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; transform: scale(1.05); }
+  }
+
+  /* Muneem Ji Chatbot Animations */
+  @keyframes mj-bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  @keyframes mj-blink {
+    0%, 92%, 100% { transform: scaleY(1); }
+    94% { transform: scaleY(0.15); }
+  }
+
+  @keyframes mj-wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(12deg); }
+    75% { transform: rotate(-10deg); }
+  }
+
+  @keyframes mj-panel-in {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes mj-panel-out {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+  }
+
+  @keyframes mj-pop {
+    from { transform: scale(0.92); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes mj-bubble {
+    from { transform: translateY(6px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes mj-typing {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-4px); }
+  }
+
+  @keyframes mj-confetti {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+  }
+
+  /* Apply animations */
+  .muneemji-launcher {
+    animation: mj-bob 2s ease-in-out infinite;
+  }
+
+  .muneemji-launcher:hover {
+    animation: mj-wave 0.6s ease-in-out;
+  }
+
+  .muneemji-avatar {
+    animation: mj-blink 4s ease-in-out infinite;
+  }
+
+  .muneemji-panel {
+    animation: mj-panel-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .mj-typing-dot {
+    animation: mj-typing 1.4s ease-in-out infinite;
+  }
+
+  .option-chip:hover {
+    transform: translateY(-1px);
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .muneemji-launcher,
+    .muneemji-avatar,
+    .muneemji-panel,
+    .mj-typing-dot,
+    .option-chip,
+    .message-bubble {
+      animation: none !important;
+      transition: none !important;
+    }
   }
 }
